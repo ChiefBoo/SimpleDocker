@@ -1,0 +1,10 @@
+services:
+  server:
+    build: ./
+    tty: true
+  proxy:
+    build: ./compose/
+    tty: true
+    ports:
+      - 80:8080
+      
